@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="containerToDo">
+        <div class="cont1">
+            <div class="contT">
+                <div class="contTitulo">
+                    <h1 class="titulo1">TO-DO</h1>
+                    <h1 class="titulo2">list</h1>
+                </div> 
+                <p class="infoText">Adicione suas tarefas do dia para se organizar.</p>
+            </div>
+            <div class="contFunc">
+                <div class="forms">
+                    <div class="contAtiv">
+                        <div class="atv">
+                            <label for="atividadeInput">Atividade</label>
+                            <input class="estiloForms" type="text" id="atividadeInput" name="atividade" placeholder="Adicione uma nova atividade">    
+                        </div>
+                        <button class="botaoAdc"></button>
+                    </div>
+                    <div class="contPesquisar">
+                        <div class="pqs">
+                            <label class="inputPesquisar" for="pesquisarInput">Pesquisar</label>
+                            <input class="estiloForms" type="text" name="pesquisar" id="pesquisarInput" placeholder="Buscar">  
+                        </div>
+                        <button></button>
+                    </div>
+                    <label for="meuSelect" class="filtro">Filtrar
+                        <select class="estiloForms selecao" id="selecioneFiltro" name="filtro">
+                            <option value="todos">Todos</option>
+                            <option value="concluidos">Concluídos</option>
+                            <option value="a fazer">A fazer</option>
+                        </select>    
+                    </label>                    
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="cont2"></div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
