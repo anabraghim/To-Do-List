@@ -7,45 +7,51 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <section class="containerToDo">
-        <div class="cont1">
-            <div class="contT">
-                <div class="contTitulo">
-                    <h1 class="titulo1">TO-DO</h1>
-                    <h1 class="titulo2">list</h1>
-                </div> 
-                <p class="infoText">Adicione suas tarefas do dia para se organizar.</p>
+    <div class="container">
+        <section class="inputContainer">
+            <div class="textsContainer">
+                <div class="title">
+                    <h1 class="titleToDo">to-do</h1>
+                    <h1 class="titleList">list</h1>
+                </div>
+                <p>adicione suas tarefas do dia para se organizar</p>
             </div>
-            <div class="contFunc">
-                <div class="forms">
-                    <div class="contAtiv">
-                        <div class="atv">
-                            <label for="atividadeInput">Atividade</label>
-                            <input class="estiloForms" type="text" id="atividadeInput" name="atividade" placeholder="Adicione uma nova atividade">    
-                        </div>
-                        <button class="botaoAdc"></button>
+            <div class="forms">
+                <form class="formStyle taskContainer">
+                    <label for="taskInput">tarefa</label>
+                    <div class="taskForm">
+                        <input type="text" id="taskInput" placeholder="Adicione uma nova tarefa">
+                        <button type="submit" id="taskButton"></button>
                     </div>
-                    <div class="contPesquisar">
-                        <div class="pqs">
-                            <label class="inputPesquisar" for="pesquisarInput">Pesquisar</label>
-                            <input class="estiloForms" type="text" name="pesquisar" id="pesquisarInput" placeholder="Buscar">  
-                        </div>
-                        <button></button>
+                </form>
+                <form class="formStyle searchContainer">
+                    <label for="searchInput">pesquisar</label>
+                    <div class="searchForm">
+                        <input type="text" id="searchInput" placeholder="Buscar">
+                        <button type="submit" id="searchButton"></button>
                     </div>
-                    <label for="meuSelect" class="filtro">Filtrar
-                        <select class="estiloForms selecao" id="selecioneFiltro" name="filtro">
-                            <option value="todos">Todos</option>
-                            <option value="concluidos">Concluídos</option>
-                            <option value="a fazer">A fazer</option>
-                        </select>    
-                    </label>                    
+                </form>
+                <form class="formStyle filterContainer">
+                    <label for="filterSelect">filtro</label>
+                    <select id="filterSelect">
+                        <option value="all">todos</option>
+                        <option value="toDo">a fazer</option>
+                        <option value="check">concluídas</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+        <section class="tasksContainer">
+            <div class="task">
+                <p>1. atividade estatísticabdow djd iusw isuwnos wojwoqwsjho wioswoswijosijqoihsqwobiqudb</p>
+                <div class="buttonOptions">
+                    <button class="checkButton"></button>
+                    <button class="editButton"></button>
+                    <button class="removeButton"></button>
                 </div>
             </div>
-            
-
-        </div>
-        <div class="cont2"></div>
-    </section>
+        </section>   
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
