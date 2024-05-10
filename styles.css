@@ -13,8 +13,8 @@
 }
 
 :root{
-    --verdeMedio: #7ED957;
-    --verdeClaro: #C1FF72;
+    --verdeMedio: #4e8d33;
+    --verdeClaro: #b6dc84;
     --brancoMedio: #FFFEF5;
     --brancoClaro: #FFFFFF;
     --fontePadrao: "Nunito", sans-serif;;
@@ -30,6 +30,8 @@ body{
     width: 100vw;
     overflow-x: hidden;
 }
+
+
 
 .container{
     display: grid;
@@ -98,6 +100,10 @@ body{
     flex: 1%;
     outline: none;
 
+}
+
+.inputContainer .forms .formStyle input::placeholder {
+    color: var(--verdeMedio);
 }
 
 .inputContainer .forms .filterContainer #filterSelect{
