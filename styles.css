@@ -9,6 +9,7 @@
     font-family: var(--fontePadrao);
     color: var(--verdeMedio);
     border: 0;
+    text-transform: capitalize;
 }
 
 :root{
@@ -34,11 +35,9 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 10em;
-    padding: 15%;
+    padding: 12%;
 }
 
-/* .inputContainer{
-} */
 
 .inputContainer .textsContainer{
     display: flex;
@@ -52,8 +51,13 @@ body{
     padding-left: 1rem;
 }
 
+.inputContainer .textsContainer .title .titleToDo{
+    text-transform: uppercase;
+}
+
 .inputContainer .textsContainer .title .titleList{
     font-family: var(--fonteCursiva);
+    text-transform: lowercase;
 }
 
 .inputContainer .textsContainer p{
@@ -85,18 +89,15 @@ body{
     flex-direction: column;
 }
 
-/* .inputContainer .forms .searchContainer .searchForm #searchInput{
-    width: 0%;
-}  */
-
 .inputContainer .forms .formStyle input{
     background-color: var(--verdeClaro);
     width: 0%;
     padding-left: 0.8rem;
     margin-right: 0.8rem;
     border-radius: 3em;
-    /* flex: content; */
     flex: 1%;
+    outline: none;
+
 }
 
 .inputContainer .forms .filterContainer #filterSelect{
@@ -106,10 +107,6 @@ body{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
 }
-
-/* formContainer */
-
-
 
 .inputContainer .forms .formStyle button{
     width: 4.5rem;
@@ -132,7 +129,6 @@ body{
     background-repeat: no-repeat;
 }
 
-
 .tasksContainer{
     background-color: var(--brancoClaro);
     border: 1px solid var(--verdeMedio);
@@ -147,6 +143,14 @@ body{
     border-bottom: 1px solid var(--verdeMedio);
     display: flex;
     justify-content: space-between;
+}
+
+.tasksContainer .filtrado{
+    display: none;
+}
+
+.tasksContainer .check{
+    text-decoration: line-through;
 }
 
 .tasksContainer .task p{
@@ -189,7 +193,7 @@ body{
 
 @media (max-width: 800px){
     html{
-        font-size: 40.5%;
+        font-size: 33.5%;
     }
 
     .container{
